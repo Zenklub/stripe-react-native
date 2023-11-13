@@ -279,6 +279,13 @@ export type RevolutPayParams = {
   };
 };
 
+export type PixParams = {
+  paymentMethodType: 'Pix';
+  paymentMethodData?: {
+    mandateData?: MandateData;
+  };
+};
+
 export type CollectBankAccountParams = {
   paymentMethodType: 'USBankAccount';
   paymentMethodData: {
